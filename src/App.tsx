@@ -9,12 +9,10 @@ import {
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Physics, RigidBody } from "@react-three/rapier";
-import { Rover } from "./components";
+import { Rover, Terrain } from "./components";
 import { styles } from "./App.style.ts";
 
 function App() {
-  const { scene } = useGLTF("/terrain.glb");
-
   return (
     <VStack sx={styles.page}>
       {/* Loader */}
@@ -31,9 +29,7 @@ function App() {
 
           <Physics gravity={[0, -9.81, 0]}>
             {/* Terrain */}
-            <RigidBody type="fixed" colliders="trimesh">
-              <primitive object={scene} scale={0.01} />
-            </RigidBody>
+            <Terrain />
 
             {/* Rover */}
             <Rover />
