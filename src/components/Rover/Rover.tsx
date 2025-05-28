@@ -10,7 +10,7 @@ export const Rover = () => {
       mass={5}
       friction={1}
       restitution={0}
-      position={[0, 2, 0]}
+      position={[-5, 5, 3]}
     >
       <primitive object={scene} scale={0.1} />
     </RigidBody>
