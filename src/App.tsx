@@ -1,14 +1,8 @@
 import { Suspense } from "react";
 import { VStack } from "@chakra-ui/react";
-import {
-  Environment,
-  Loader,
-  OrbitControls,
-  Sky,
-  useGLTF,
-} from "@react-three/drei";
+import { Environment, Loader, OrbitControls, Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Physics, RigidBody } from "@react-three/rapier";
+import { Physics } from "@react-three/rapier";
 import { Rover, Terrain } from "./components";
 import { styles } from "./App.style.ts";
 
