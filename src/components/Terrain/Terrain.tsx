@@ -9,5 +9,11 @@ export const Terrain = () => {
     <RigidBody type="fixed" colliders="trimesh">
       <primitive object={scene} />
     </RigidBody>
+    // <RigidBody type="fixed" colliders="cuboid" position={[0, 0, 0]}>
+    //   <mesh scale={[20, 1, 20]} receiveShadow>
+    //     <boxGeometry args={[1, 1, 1]} />
+    //     <meshStandardMaterial color="green" />
+    //   </mesh>
+    // </RigidBody>
   );
 };
